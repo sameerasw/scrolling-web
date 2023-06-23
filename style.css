@@ -15,7 +15,7 @@ body{
 }
 
 header{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -78,7 +78,7 @@ section::before{
     width: 100%;
     height: 100px;
     background: linear-gradient(to top, #1e246a, transparent);
-    z-index: 1000;
+    z-index: 900;
 }
 
 section img{
@@ -104,10 +104,23 @@ section img#clouds{
     z-index: 11;
 }
 
+#nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 800;
+    overflow: hidden;
+}
+
 
 #text{
     position: absolute;
-    right: -350px;
+    right: 600px;
     top: 230px;
     color: #f5f6fa;
     white-space: nowrap;
